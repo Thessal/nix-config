@@ -1,0 +1,6 @@
+[submodule "nixpkgs"]
+	path = nixpkgs
+	url = ./nixpkgs
+[submodule "unmatched-nixos"]
+	path = unmatched-nixos
+	url = ./unmatched-nixos/
