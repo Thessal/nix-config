@@ -21,7 +21,11 @@ nix-shell -p stdenv
 * nixos
 ```
 vim /etc/nixos/configuration.nix
-sudo nixos-rebuild build
+sudo nixos-rebuild -I nixpkgs="./nixpkgs" build
 sudo nixos-rebuild switch
+
+nix-channel --add https://nixos.org/channels/nixos-21.05 nixos
+nix-channel --list
+sudo nixos-rebuild switch --upgrade
 ```
 
